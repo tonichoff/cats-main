@@ -10,6 +10,10 @@ function init_quizzes(answer_text_env_id) {
     problem_text.find('Quiz').each(function() {
       var quiz = $(this);
       quiz.find('Text').each(function() {
+<<<<<<< HEAD
+=======
+        quiz.before($(this));
+>>>>>>> problem_text: Add 'Text' tag handler
         $(this).replaceWith($('<p></p>', {html: $(this).html()}));
       });
       var form = $('<form/>');
